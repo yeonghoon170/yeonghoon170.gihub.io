@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>보이는 그대로의 나</title>
+    <style>
+        .gohome {
+            color : blue;
+            text-decoration: none;
+            
+        }
+
+    </style>
+     
+  </head>
+  <body>
+    <h2><a href="home.html" class="gohome">HOME</a></h2> <p>
+        <h1>영훈's 자기소개 </h1>
+        <img src="IMG_5412 .JPG" width="300px">
+    <ul>
+        <li>이름 : 고영훈</li>
+        <li>학과 : 바둑학과</li>
+        <li>나이 : 24살</li>
+        <li>취미 : 영화 감상</li> 
+        <li>좋아하는 활동</li>  
+        <ol type = 1>
+            <li>테니스 치기</li>
+            <li>농구하기</li>
+            <li>독서하기</li>
+          </ol>
+        <li>좋아하는 음식</li> 
+        <ol type = 1>
+            <li>치킨</li>
+            <li>소고기</li>
+            <li>초밥</li>
+          </ol>
+        
+        <li>오늘 하면서 느낀 점 : 침착하자</li>
+
+      </ul>
+    <div id="map" style="width: 500px; height: 400px"></div>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey='myAppKey"
+    ></script>
+    <script>
+      var container = document.getElementById("map");
+      var options = {
+        center: new kakao.maps.LatLng(37.73456, 126.75744),
+        level: 3,
+      };
+
+      var map = new kakao.maps.Map(container, options);
+    </script>
+  </body>
+</html>
+
+     
